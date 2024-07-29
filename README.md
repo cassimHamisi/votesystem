@@ -19,10 +19,10 @@ Ensure you have the following installed:
 
 Clone the project repository to your local machine:
 
-```bash
+```
 git@github.com:cassimHamisi/votesystem.git
 cd votesystem
-
+```
 ### 2. Set Up the MySQL Database
  Create a Database:
 
@@ -36,16 +36,16 @@ cd votesystem
 Locate the your-database-file.sql file in the project root directory. Import this file into your newly created database. You can do this using the MySQL command line:
 ```
   mysql -u your_username -p your_database_nam < votesystem.sql
-  ```
-
+  
+```
 ### 4. Configure Database Connection
 
 Edit the Configuration File:
 
 Open the configuration file where database connection details are specified. This is usually named config.php, .env, or database.php. Update it with your database credentials:
 
-
 ```
+
 <?php
 $dbHost = 'localhost'; // or your database host
 $dbName = 'your_database_name';
